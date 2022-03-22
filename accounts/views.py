@@ -1,7 +1,7 @@
-from django.contrib.auth import login, logout, authenticate
+from django.contrib import messages
+from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.forms import AuthenticationForm
 from django.shortcuts import redirect, render
-from django.contrib import messages
 from django.views.generic import CreateView
 
 from .forms import CustomerSignUpForm, EmployeeSignUpForm
