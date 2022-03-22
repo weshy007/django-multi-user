@@ -15,7 +15,7 @@ class Customer(models.Model):
     phone_number = models.CharField(max_length=100)
     location = models.CharField(max_length=20)
 
-class Customer(models.Model):
+class Employee(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE, primary_key=True)
     phone_number = models.CharField(max_length=100)
     designation = models.CharField(max_length=20)
